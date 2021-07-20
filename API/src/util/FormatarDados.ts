@@ -1,0 +1,19 @@
+import { Sensores, SensoresRequest } from "src/interfaces/dadosSensores";
+import { StatusRequest, Status } from "src/interfaces/dadosStatus";
+
+export class FormatarDados {
+    public static formatarStatus = (dados: StatusRequest): Status => ({
+        status: (dados.status) ? 'ativo' : 'inativo',
+        velocidade: dados.velocidade,
+        perdido: (dados.perdido) ? 'perdido' : 'em rota',
+        dataRegistro: new Date()
+    });
+
+    public static formatarSensor = (dados: SensoresRequest): Sensores => ({
+        sensor: dados.nome,
+        status: (dados.status) ? 'ativo' : 'inativo',
+        condicao: (dados.condicao) ? 'funcionando' : 'danificado',
+        descricao: (dados.condicao) ? 'Sem ocorrências' : 'Sensor está com defeito',
+        dataRegistro: new Date()
+    });
+}

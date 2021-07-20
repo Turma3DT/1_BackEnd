@@ -1,0 +1,37 @@
+{
+    "dados": [{
+            "key": "status",
+            "val": {
+                "status": "desconhecido",
+                "velocidade": "0m/s",
+                "pedido": "desconhecido",
+                "dataRegistro": "2021-06-13T04:29:43.201Z"
+            }
+        },
+        {
+            "key": "sensores",
+            "val": [{
+                    "sensor": "Sensor A",
+                    "status": "desconhecido",
+                    "condicao": "desconhecido",
+                    "descricao": "Sem ocorrências",
+                    "dataRegistro": "2021-06-13T04:29:43.201Z"
+                },
+                {
+                    "sensor": "Sensor B",
+                    "status": "desconhecido",
+                    "condicao": "desconhecido",
+                    "descricao": "Sem ocorrências",
+                    "dataRegistro": "2021-06-13T04:29:43.201Z"
+                },
+                {
+                    "sensor": "Sensor C",
+                    "status": "desconhecido",
+                    "condicao": "desconhecido",
+                    "descricao": "Sem ocorrências",
+                    "dataRegistro": "2021-06-13T04:29:43.201Z"
+                }
+            ]
+        }
+    ]
+}
